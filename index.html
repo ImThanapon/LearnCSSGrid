@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn Responsive CSS GRID</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 <body>
@@ -14,29 +14,31 @@
         
         <nav>
             <div class="container">
-                <div class="logo">
-                    <h1>ASTOUNDING</h1>
-                    <span>Free PSD Website Template</span>
+                <div class="nav-grid">
+                    <div class="logo">
+                        <h1>ASTOUNDING</h1>
+                        <span>Free PSD Website Template</span>
+                    </div>
+                    <ul class="menu">
+                        <li class="menu-red"><a href="#">Home</a></li>
+                        <li class="menu-yellow"><a href="#">Styledemo</a></li>
+                        <li class="menu-plum"><a href="#">Full Width</a></li>
+                        <li class="menu-aqua"><a href="#">Dropdown</a></li>
+                        <li class="menu-bisque"><a href="#">Portfolio</a></li>
+                        <li class="menu-darkgoldenrod"><a href="#">Gallary</a></li>
+                    </ul>
                 </div>
-                <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Styledemo</a></li>
-                    <li><a href="#">Full Width</a></li>
-                    <li><a href="#">Dropdown</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Gallary</a></li>
-                </ul>
             </div>
             
         </nav>
-    </header>
+    </้header>
 
     <section class="content">
         <div class="container">
 
             <div class="content-heading">
                 <h1>
-                    A Massive Title That Uses Loads Of Room.
+                    A Massive <br> Title That Uses <br> Loads Of Room.
                 </h1>
             </div>
             <!-- content-heading -->
@@ -80,32 +82,40 @@
             <div class="content-teams">
                 <div class="content-teams-grid">
 
-                    <div class="content-team-item">
+                    <div class="content-teams-item">
                         <img src="https://via.placeholder.com/225x225" alt="">
                         <h2>Your Name</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, praesentium. Tempore ducimus aspernatur quae nam.</p>
-                        <a href="#">View profile</a>
+                        <div class="cr">
+                            <a href="#">View profile >></a>
+                        </div>
                     </div>
 
-                    <div class="content-team-item">
+                    <div class="content-teams-item">
                         <img src="https://via.placeholder.com/225x225" alt="">
                         <h2>Your Name</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, praesentium. Tempore ducimus aspernatur quae nam.</p>
-                        <a href="#">View profile</a>
+                        <div class="cr">
+                            <a href="#">View profile >></a>
+                        </div>
                     </div>
 
-                    <div class="content-team-item">
+                    <div class="content-teams-item">
                         <img src="https://via.placeholder.com/225x225" alt="">
                         <h2>Your Name</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, praesentium. Tempore ducimus aspernatur quae nam.</p>
-                        <a href="#">View profile</a>
+                        <div class="cr">
+                            <a href="#">View profile >></a>
+                        </div>
                     </div>
 
-                    <div class="content-team-item">
+                    <div class="content-teams-item">
                         <img src="https://via.placeholder.com/225x225" alt="">
                         <h2>Your Name</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, praesentium. Tempore ducimus aspernatur quae nam.</p>
-                        <a href="#">View profile</a>
+                        <div class="cr">
+                            <a href="#">View profile >></a>
+                        </div>
                     </div>
                 </div>
                 <!-- content-teams-grid -->
@@ -125,8 +135,8 @@
                 <div class="footer-item">
                     <h3>Form The blog</h3>
                     <h4>Post Title</h4>
-                    <span class="admin"><a href="#">Admin</a>, domainname.com</span>
-                    <span class="date"></span>
+                    <span class="admin"><a href="#">Admin</a>, domainname.com</span><br>
+                    <span class="date">Monday, 13th September 2021</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, corrupti voluptatibus explicabo beatae vel quas modi officiis architecto eius pariatur?</p>
                     <a href="#">Read more >></a>
                 </div>
@@ -151,12 +161,13 @@
                 </div>
 
                 <div class="footer-item">
+                    <h3>Contact Us</h3>
                     <form action="">
                         <input type="text" name="username" placeholder="Full Name">
                         <input type="email" name="email" placeholder="Email">
                         <input type="text" name="subject" placeholder="Subject">
                         <textarea name="massage" placeholder="Massage"></textarea>
-                        <input type="submit" value="submit">
+                        <input class="btn-hover" type="submit" value="submit">
                     </form>
                 </div>
 
