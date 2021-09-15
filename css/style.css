@@ -3,6 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* ------------------------------- hamburger ------------------------------- */
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    margin: 1rem;
+}
+  
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.open {
+    height: auto !important;
+}
+
+/* ------------------------------- container ------------------------------- */
 .container {
     max-width: 960px;
     width: 100%;
@@ -494,9 +514,15 @@ footer{
 }
 
 @media only screen and (max-width : 480px) {
+
+    .hamburger{
+        display: inline-block;
+    }
+
     .nav-grid{
         grid-template-columns: 1fr;
         text-align: center;
+        height: 0;
     }
     header{
         height: auto;
@@ -513,7 +539,8 @@ footer{
         padding-top: 1.5rem;
     }
     .logo{
-        border-bottom: 1px solid #666666;
+        margin-top: 0 ;
+        border-bottom: 0px solid #666666;
     }
     .content-services-grid{
         grid-template-columns: 1fr;
